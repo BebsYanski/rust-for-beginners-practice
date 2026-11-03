@@ -40,11 +40,11 @@ fn main() {
 fn cel_to_fahr(temp: f64) {
     let fahr = temp * (9_f64 / 5_f64) + 32_f64;
 
-    println!("{}℃ = {}℉", temp, fahr);
+    println!("{}℃ = {:.2}℉", temp, fahr);
 }
 
 fn fahr_to_cel(temp: f64) {
     let cel = (temp - 32_f64) * (5_f64 / 9_f64);
 
-    println!("{}℉ = {}℃", temp, cel);
+    println!("{}℉ = {:.2}℃", temp, cel);
 }
